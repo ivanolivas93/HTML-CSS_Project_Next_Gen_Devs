@@ -1,3 +1,50 @@
+.video__wrapper {
+  width: 320px;
+}
+
+.video {
+  background-color: #31d4e7;
+}
+
+.video__title {
+  font-family: 'Raleway Bold', sans-serif;
+  color: #222222;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 60px 0 26px 0;
+}
+
+.video__description {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.video__software-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.video__icon {
+  border-radius: 50%;
+  background-color: rgb(0, 152, 205);
+  width: 69px;
+  height: 69px;
+  margin-bottom: 38px;
+}
+
+.video__trailer {
+  margin-bottom: 60px;
+}
+
 // TABLET
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
