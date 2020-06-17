@@ -1,6 +1,209 @@
+// MOBILE
+
+.header-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header {
+  padding-top: 20px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: $main-white-color;
+}
+
+.site-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: $main-blue-color;
+  line-height: 36px;
+  margin: 0px;
+  padding: 30px 0 30px 15px;
+}
+
+.burger {
+  background-image: url('../images/icons/burger.png');
+  display: flex;
+  width: 28px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 15px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .burger {
+    background-image: url('../images/icons/burger@2x.png');
+    width: 28px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 15px 30px 0;
+  }
+}
+
+.site-navigation {
+  overflow: hidden;
+}
+
+.header-background {
+  background-image: url('../images/background.jpg');
+  width: 320px;
+  height: 567px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-background {
+    background-image: url('../images/background@2x.jpg');
+    width: 320px;
+    height: 567px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.header-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: $main-white-color;
+  line-height: 36px;
+  margin: 0 0 18px 15px;
+  padding-top: 92px;
+}
+
+.header-text {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: $main-white-color;
+  line-height: 24px;
+  margin: 0 0 30px 15px;
+}
+
+.header-list {
+  list-style-type: none;
+  margin: 0 0 0 15px;
+}
+
+.pe-7s-angle-right {
+  display: inline-block;
+  font-size: 32px;
+  font-family: 'Pe-icon-7-stroke';
+  text-align: left;
+  line-height: 1.125;
+  text-transform: uppercase;
+  width: 7px;
+  height: 11px;
+  color: #f3f4f5;
+}
+
+.header-list__item {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: $main-white-color;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.header-list__item::before {
+  content: '';
+  font-family: 'Pe-icon-7-stroke';
+  position: absolute;
+  width: 7px;
+  height: 11px;
+  color: #f3f4f5;
+  top: 330px;
+  left: 220px;
+}
+
+.header-button {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: $main-white-color;
+  line-height: 36px;
+  margin: 0 auto;
+  //   margin-bottom: 105px;
+  width: 211px;
+  height: 48px;
+  background-color: $main-blue-color;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.header-button__icon {
+  //   display: flex;
+  //   justify-content: left;
+  display: inline-block;
+  width: 36px;
+  height: 24px;
+  padding: 12px 20px 12px 22px;
+  fill: $main-white-color;
+}
+
 // TABLET
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-wrapper {
+    width: 768px;
+  }
+
+  .page-header {
+    width: 768px;
+  }
+
+  .header-background {
+    background-image: url('../images/background_tablet.jpg');
+    width: 768px;
+    height: 759px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-background {
+      background-image: url('../images/background_tablet@2x.jpg');
+      width: 768px;
+      height: 759px;
+    }
+  }
+
+  .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: 50px;
+  }
+
+  .header-list__item {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
 }
 
 // DESKTOP
