@@ -1,31 +1,57 @@
 <div class="video__wrapper">
   <section class="video">
-    <h2 class="video__title">watch the video</h2>
+    <div class="video__information">
+      <h2 class="video__title">watch the video</h2>
 
-    <p class="video__description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
-      at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
-      hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
-    </p>
+      <p class="video__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        fringilla fringilla nisl congue congue. Maecenas nec condimentum libero,
+        at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
+        hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
+      </p>
 
-    <ul class="video__software-list">
-      <li class="video__software-list__item">
-        <img
-          src="../images/icons/icon-apple.svg"
-          alt="apple"
-          class="video__icon--apple"
-        />
-      </li>
+      <ul class="video__software-list">
+        <li class="video__software-list__item">
+          <!-- <img
+            src="../images/icons/icon-apple.svg"
+            alt="apple"
+            class="video__icon--apple"
+          /> -->
 
-      <li class="video__software-list__item">
-        <img
-          src="../images/icons/icon-android.svg"
-          alt="android"
-          class="video__icon--android"
-        />
-      </li>
-    </ul>
+          <img
+            class="video__icon--apple"
+            srcset="
+              ../images/icons/icon-apple.png     69w,
+              ../images/icons/icon-apple@2x.png 138w
+            "
+            sizes="69px"
+            src="../images/icons/icon-apple.png"
+            height="69"
+            alt="apple"
+          />
+        </li>
+
+        <li class="video__software-list__item">
+          <!-- <img
+            src="../images/icons/icon-android.svg"
+            alt="android"
+            class="video__icon--android"
+          /> -->
+
+          <img
+            class="video__icon--android"
+            srcset="
+              ../images/icons/icon-android.png     69w,
+              ../images/icons/icon-android@2x.png 138w
+            "
+            sizes="69px"
+            src="../images/icons/icon-android.png"
+            height="69"
+            alt="android"
+          />
+        </li>
+      </ul>
+    </div>
 
     <video
       class="video__trailer"
