@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.key-features {
+  position: relative;
+}
+
 .key-features__heading {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -252,7 +256,7 @@
     display: flex;
     justify-content: end;
     position: absolute;
-    top: 420px;
+    top: 280px;
     left: 410px;
     background-image: url('../images/phone_desktop.jpg');
     width: 418px;
