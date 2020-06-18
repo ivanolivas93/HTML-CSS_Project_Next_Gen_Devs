@@ -37,14 +37,11 @@
   display: flex;
   justify-content: center;
   list-style: none;
+  margin-bottom: 38px;
 }
 
-.video__icon {
-  // border-radius: 50%;
-  // background-color: rgb(0, 152, 205);
-  // width: 69px;
-  // height: 69px;
-  margin-bottom: 38px;
+.video__icon--apple {
+  margin-right: 16px;
 }
 
 .video__trailer {
@@ -110,7 +107,7 @@
   .video__trailer {
     width: 500px;
     height: 307px;
-    padding-top: 73px;
+    margin-top: 73px;
     padding-bottom: 70px;
   }
 }
