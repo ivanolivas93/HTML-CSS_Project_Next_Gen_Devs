@@ -12,8 +12,43 @@
   text-align: center;
   text-transform: uppercase;
   display: block;
-  width: 165px;
   margin: 0 auto 52px;
+}
+
+.customers__title-mobile {
+  display: block;
+}
+
+.customers__title-desktop-tablet {
+  display: none;
+}
+
+.customers__title:first-child {
+  margin-bottom: 6px;
+}
+
+.customers__title:nth-child(2) {
+  margin: 0 auto 52px;
+}
+
+.customers__title:first-child:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #535b64;
+  opacity: 0.4;
+  margin: 0 10px 7px 0;
+}
+
+.customers__title:first-child:after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #535b64;
+  opacity: 0.4;
+  margin: 0 0 7px 10px;
 }
 
 .customers__photo {
@@ -56,6 +91,7 @@
   text-align: center;
   width: 228px;
   margin: 0 auto;
+  position: relative;
 }
 
 .customers__feedback::before {
@@ -66,6 +102,10 @@
   background-position: center;
   width: 50px;
   height: 40px;
+  opacity: 0.8;
+  position: absolute;
+  left: -23px;
+  top: -23px;
 }
 
 // @media (-webkit-min-device-pixel-ratio: 2),
@@ -94,6 +134,8 @@
   background-position: center;
   width: 63px;
   height: 10px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 // @media (-webkit-min-device-pixel-ratio: 2),
@@ -122,8 +164,7 @@
     margin: 0 auto;
   }
 
-  .customers__title {
-    width: 398px;
+  .customers__title:first-child {
     margin: 0 auto 65px;
   }
 
@@ -132,8 +173,26 @@
   }
 
   .customers__feedback {
-    width: 576px;
+    width: 558px;
     margin: 0 auto;
+    line-height: 34px;
+  }
+
+  .customers__feedback::before {
+    left: -24px;
+    top: -14px;
+  }
+
+  .customers__feedback::after {
+    margin-top: 48px;
+  }
+
+  .customers__title-mobile {
+    display: none;
+  }
+
+  .customers__title-desktop-tablet {
+    display: block;
   }
 }
 
@@ -145,8 +204,7 @@
     margin: 0 auto;
   }
 
-  .customers__title {
-    width: 398px;
+  .customers__title:first-child {
     margin: 0 auto 65px;
   }
 
@@ -157,5 +215,23 @@
   .customers__feedback {
     width: 938px;
     margin: 0 auto;
+    line-height: 34px;
+  }
+
+  .customers__title-mobile {
+    display: none;
+  }
+
+  .customers__title-desktop-tablet {
+    display: block;
+  }
+
+  .customers__feedback::before {
+    left: -38px;
+    top: -14px;
+  }
+
+  .customers__feedback::after {
+    margin-top: 48px;
   }
 }
