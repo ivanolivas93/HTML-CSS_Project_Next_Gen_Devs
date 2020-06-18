@@ -28,29 +28,7 @@
 }
 
 .burger {
-  background-image: url('../images/icons/burger.png');
-  display: flex;
-  width: 28px;
-  height: 19px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   margin-right: 15px;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2),
-  (-o-min-device-pixel-ratio: 2/1),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .burger {
-    background-image: url('../images/icons/burger@2x.png');
-    width: 28px;
-    height: 19px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 30px 15px 30px 0;
-  }
 }
 
 .site-navigation {
@@ -123,17 +101,13 @@
   color: $main-white-color;
   line-height: 36px;
   margin-bottom: 24px;
-}
-
-.header-list__item::before {
-  content: '';
-  font-family: 'Pe-icon-7-stroke';
-  position: absolute;
-  width: 7px;
-  height: 11px;
-  color: #f3f4f5;
-  top: 330px;
-  left: 220px;
+  display: flex;
+  img {
+    margin-right: 11px;
+  }
+  span {
+    line-height: 10px;
+  }
 }
 
 .header-button {
@@ -152,46 +126,8 @@
   justify-content: center;
   align-items: center;
   border: none;
-}
-
-.header-button__icon {
-  display: inline-block;
-  width: 36px;
-  height: 24px;
-  padding: 12px 20px 12px 22px;
-  fill: $main-white-color;
-}
-
-.cloud-icon {
-  display: flex;
-  position: absolute;
-  top: 515px;
-  left: 210px;
-  background-image: url('../images/icons/icon_cloud_download');
-  width: 36px;
-  height: 24px;
-  color: $main-white-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2),
-  (-o-min-device-pixel-ratio: 2/1),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .cloud-icon {
-    display: flex;
-    position: absolute;
-    top: 515px;
-    left: 210px;
-    background-image: url('../images/icons/icon_cloud_download@2x');
-    width: 36px;
-    height: 24px;
-    color: $main-white-color;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  img {
+    margin-right: 11px;
   }
 }
 
@@ -291,34 +227,14 @@
 
   .phones-image {
     display: flex;
-    justify-content: end;
     position: absolute;
-    top: 450px;
+    top: 425px;
     left: 510px;
-    background-image: url('../images/phones_1.jpg');
-    width: 303px;
-    height: 445px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  @media (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .phones-image {
-      display: flex;
-      justify-content: end;
-      position: absolute;
-      top: 300px;
-      left: 470px;
-      background-image: url('../images/phones_1@2x.jpg');
-      width: 303px;
-      height: 445px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    .phones__tablet {
+      display: block;
+    }
+    .phones__desktop {
+      display: none;
     }
   }
 }
@@ -415,34 +331,14 @@
 
   .phones-image {
     display: flex;
-    justify-content: end;
     position: absolute;
-    top: 200px;
-    left: 710px;
-    background-image: url('../images/phones_2.jpg');
-    width: 452px;
-    height: 663px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  @media (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .phones-image {
-      display: flex;
-      justify-content: end;
-      position: absolute;
-      top: 200px;
-      left: 710px;
-      background-image: url('../images/phones_2@2x.jpg');
-      width: 452px;
-      height: 663px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    top: 246px;
+    right: 130px;
+    .phones__tablet {
+      display: none;
+    }
+    .phones__desktop {
+      display: block;
     }
   }
 }
