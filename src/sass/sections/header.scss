@@ -248,6 +248,7 @@
 
   .page-header {
     width: 1200px;
+    position: relative;
   }
 
   .header-background {
@@ -332,8 +333,8 @@
   .phones-image {
     display: flex;
     position: absolute;
-    top: 246px;
-    right: 130px;
+    top: 200px;
+    right: 70px;
     .phones__tablet {
       display: none;
     }
