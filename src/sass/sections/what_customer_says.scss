@@ -1,9 +1,237 @@
+.customers__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.customers__title {
+  font-family: 'Raleway Bold', sans-serif;
+  color: #1ab798;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto 52px;
+}
+
+.customers__title-mobile {
+  display: block;
+}
+
+.customers__title-desktop-tablet {
+  display: none;
+}
+
+.customers__title:first-child {
+  margin-bottom: 6px;
+}
+
+.customers__title:nth-child(2) {
+  margin: 0 auto 52px;
+}
+
+.customers__title:first-child:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #535b64;
+  opacity: 0.4;
+  margin: 0 10px 7px 0;
+}
+
+.customers__title:first-child:after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #535b64;
+  opacity: 0.4;
+  margin: 0 0 7px 10px;
+}
+
+.customers__photo {
+  display: block;
+  margin: 0 auto 28px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(196, 199, 199);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  height: 100px;
+}
+
+.customers__name {
+  font-family: 'OpenSans Semibold', sans-serif;
+  color: #062033;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.customers__company-name {
+  font-family: 'OpenSans Semibold', sans-serif;
+  color: #646464;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.customers__feedback {
+  font-family: 'OpenSans', sans-serif;
+  color: #282528;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  width: 228px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.customers__feedback::before {
+  background-image: url('/src/images/quotation_marks.png');
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 40px;
+  opacity: 0.8;
+  position: absolute;
+  left: -23px;
+  top: -23px;
+}
+
+// @media (-webkit-min-device-pixel-ratio: 2),
+//   (-o-min-device-pixel-ratio: 2/1),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .customers__feedback::before {
+//     background-image: url('/src/images/quotation_marks@2x.png');
+//     content: '';
+//     display: block;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     width: 99px;
+//     height: 80px;
+//     position: absolute;
+//     left: 0px;
+//     top: 80px;
+//   }
+// }
+
+.customers__feedback::after {
+  background-image: url('/src/images/slider_dots.png');
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 63px;
+  height: 10px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+// @media (-webkit-min-device-pixel-ratio: 2),
+//   (-o-min-device-pixel-ratio: 2/1),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .customers__feedback::after {
+//     background-image: url('/src/images/slider_dots@2x.png');
+//     content: '';
+//     display: block;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     width: 126px;
+//     height: 20px;
+//     position: absolute;
+//     left: 80px;
+//     top: 280px;
+//   }
+// }
+
 // TABLET
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .customers__title:first-child {
+    margin: 0 auto 65px;
+  }
+
+  .customers__company-name {
+    margin-bottom: 66px;
+  }
+
+  .customers__feedback {
+    width: 558px;
+    margin: 0 auto;
+    line-height: 34px;
+  }
+
+  .customers__feedback::before {
+    left: -24px;
+    top: -14px;
+  }
+
+  .customers__feedback::after {
+    margin-top: 48px;
+  }
+
+  .customers__title-mobile {
+    display: none;
+  }
+
+  .customers__title-desktop-tablet {
+    display: block;
+  }
 }
 
 // DESKTOP
 
 @media screen and (min-width: 1200px) {
+  .customers__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .customers__title:first-child {
+    margin: 0 auto 65px;
+  }
+
+  .customers__company-name {
+    margin-bottom: 110px;
+  }
+
+  .customers__feedback {
+    width: 938px;
+    margin: 0 auto;
+    line-height: 34px;
+  }
+
+  .customers__title-mobile {
+    display: none;
+  }
+
+  .customers__title-desktop-tablet {
+    display: block;
+  }
+
+  .customers__feedback::before {
+    left: -38px;
+    top: -14px;
+  }
+
+  .customers__feedback::after {
+    margin-top: 48px;
+  }
 }
