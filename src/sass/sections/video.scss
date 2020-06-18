@@ -1,9 +1,113 @@
+.video__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.video {
+  background-color: #31d4e7;
+}
+
+.video__information {
+  margin: 0 auto;
+  width: 245px;
+}
+
+.video__title {
+  font-family: 'Raleway Bold', sans-serif;
+  color: #222222;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 60px 0 26px 0;
+}
+
+.video__description {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.video__software-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 38px;
+}
+
+.video__icon--apple {
+  margin-right: 16px;
+}
+
+.video__trailer {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
 // TABLET
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .video__wrapper {
+    width: 768px;
+  }
+
+  .video__information {
+    margin: 0 auto;
+    width: 541px;
+  }
+
+  .video__title {
+    padding-top: 108px;
+  }
+
+  .video__icon {
+    margin-bottom: 58px;
+  }
+
+  .video__trailer {
+    width: 500px;
+    height: 307px;
+    padding-bottom: 107px;
+  }
 }
 
 // DESKTOP
 
 @media screen and (min-width: 1200px) {
+  .video__wrapper {
+    width: 1200px;
+  }
+
+  .video {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .video__information {
+    display: flex;
+    flex-wrap: wrap;
+    width: 541px;
+  }
+
+  .video__title {
+    padding-top: 108px;
+  }
+
+  .video__description {
+    text-align: left;
+    margin-bottom: 28px;
+  }
+
+  .video__trailer {
+    width: 500px;
+    height: 307px;
+    margin-top: 73px;
+    padding-bottom: 70px;
+  }
 }
