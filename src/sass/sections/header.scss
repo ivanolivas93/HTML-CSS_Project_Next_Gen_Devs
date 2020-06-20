@@ -1,0 +1,351 @@
+// MOBILE
+
+.header-wrapper {
+  // width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-header {
+  padding-top: 20px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: $main-white-color;
+}
+
+.site-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: $main-blue-color;
+  line-height: 36px;
+  margin: 0px;
+  padding: 30px 0 30px 15px;
+}
+
+.burger {
+  margin-right: 15px;
+}
+
+.site-navigation {
+  display: none;
+}
+
+.header-background {
+  background-image: url('../images/background.jpg');
+  // width: 320px;
+  max-width: 766px;
+  height: 567px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-background {
+    background-image: url('../images/background@2x.jpg');
+    width: 320px;
+    height: 567px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.header-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: $main-white-color;
+  line-height: 36px;
+  margin: 0 0 18px 15px;
+  padding-top: 92px;
+}
+
+.header-text {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: $main-white-color;
+  line-height: 24px;
+  margin: 0 0 30px 15px;
+}
+
+.header-list {
+  list-style-type: none;
+  margin: 0 0 0 15px;
+}
+
+.pe-7s-angle-right {
+  display: inline-block;
+  font-size: 32px;
+  font-family: 'Pe-icon-7-stroke';
+  text-align: left;
+  line-height: 1.125;
+  text-transform: uppercase;
+  width: 7px;
+  height: 11px;
+  color: #f3f4f5;
+}
+
+.header-list__item {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: $main-white-color;
+  line-height: 36px;
+  margin-bottom: 24px;
+  display: flex;
+  img {
+    margin-right: 11px;
+  }
+  span {
+    line-height: 10px;
+  }
+}
+
+.header-button {
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: $main-white-color;
+  line-height: 36px;
+  margin: 0 auto;
+  //   margin-bottom: 105px;
+  width: 211px;
+  height: 48px;
+  background-color: $main-blue-color;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  img {
+    margin-right: 11px;
+  }
+}
+
+.phones-image {
+  display: none;
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-wrapper {
+    // width: 768px;
+    width: 100%;
+  }
+
+  .page-header {
+    width: 768px;
+  }
+
+  .header-background {
+    background-image: url('../images/background_tablet.jpg');
+    // width: 768px;
+    max-width: 1198px;
+    height: 759px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-background {
+      background-image: url('../images/background_tablet@2x.jpg');
+      width: 768px;
+      height: 759px;
+    }
+  }
+
+  .site-logo {
+    font-size: 30px;
+    padding: 30px 0 30px 30px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .site-navigation {
+    display: flex;
+    flex-basis: 448px;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 30px;
+  }
+
+  .site-navigation__link {
+    text-decoration: none;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 36px;
+    color: #282528;
+    text-transform: uppercase;
+  }
+
+  .header-title {
+    font-size: 42px;
+    margin: 0 0 14px 30px;
+    padding-top: 174px;
+  }
+
+  .header-text {
+    font-size: 22px;
+    line-height: 36px;
+    margin: 0 0 48px 30px;
+  }
+
+  .header-list__item {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .header-list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+
+  .cloud-icon {
+    top: 648px;
+    left: 120px;
+  }
+
+  .phones-image {
+    display: flex;
+    position: absolute;
+    top: 425px;
+    left: 510px;
+    .phones__tablet {
+      display: block;
+    }
+    .phones__desktop {
+      display: none;
+    }
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+  .header-wrapper {
+    // width: 1200px;
+    width: 100%;
+  }
+
+  .page-header {
+    width: 1200px;
+    position: relative;
+  }
+
+  .header-background {
+    background-image: url('../images/background_desktop.jpg');
+    // width: 1200px;
+    max-width: 1400px;
+    height: 759px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-background {
+      background-image: url('../images/background_desktop@2x.jpg');
+      width: 1200px;
+      height: 759px;
+    }
+  }
+
+  .site-logo {
+    font-size: 30px;
+    padding: 30px 0 30px 50px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .site-navigation {
+    display: flex;
+    flex-basis: 453px;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 30px;
+  }
+
+  .site-navigation__link {
+    text-decoration: none;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 36px;
+    color: #282528;
+    text-transform: uppercase;
+  }
+
+  .header-title {
+    font-size: 42px;
+    margin: 0 0 14px 48px;
+    padding-top: 174px;
+  }
+
+  .header-text {
+    font-size: 22px;
+    line-height: 36px;
+    margin: 0 0 48px 48px;
+  }
+
+  .header-list__item {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .header-list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: 70px;
+    margin-top: 80px;
+  }
+
+  .cloud-icon {
+    top: 648px;
+    left: 82px;
+  }
+
+  .phones-image {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    right: 70px;
+    .phones__tablet {
+      display: none;
+    }
+    .phones__desktop {
+      display: block;
+    }
+  }
+}
