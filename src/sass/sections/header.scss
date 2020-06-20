@@ -1,7 +1,8 @@
 // MOBILE
 
 .header-wrapper {
-  width: 320px;
+  // width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -37,7 +38,8 @@
 
 .header-background {
   background-image: url('../images/background.jpg');
-  width: 320px;
+  // width: 320px;
+  max-width: 766px;
   height: 567px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +141,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-wrapper {
-    width: 768px;
+    // width: 768px;
+    width: 100%;
   }
 
   .page-header {
@@ -148,7 +151,8 @@
 
   .header-background {
     background-image: url('../images/background_tablet.jpg');
-    width: 768px;
+    // width: 768px;
+    max-width: 1198px;
     height: 759px;
   }
 
@@ -243,7 +247,8 @@
 
 @media screen and (min-width: 1200px) {
   .header-wrapper {
-    width: 1200px;
+    // width: 1200px;
+    width: 100%;
   }
 
   .page-header {
@@ -253,7 +258,8 @@
 
   .header-background {
     background-image: url('../images/background_desktop.jpg');
-    width: 1200px;
+    // width: 1200px;
+    max-width: 1400px;
     height: 759px;
   }
 
