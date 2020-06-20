@@ -95,7 +95,7 @@
 }
 
 .customers__feedback::before {
-  background-image: url('/src/images/quotation_marks.png');
+  background-image: url('./images/quotation_marks.png');
   content: '';
   display: block;
   background-repeat: no-repeat;
@@ -127,7 +127,7 @@
 // }
 
 .customers__feedback::after {
-  background-image: url('/src/images/slider_dots.png');
+  background-image: url('./images/slider_dots.png');
   content: '';
   display: block;
   background-repeat: no-repeat;
